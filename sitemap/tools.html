@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tools</title>
+<style type="text/css"></style>
+</head>
+<body>
+
+<div class="mod">
+  <p>
+    <label for="">去空格</label>
+    <input type="text" id="remove_whitespace" />
+    <input type="text" id="remove_whitespace_ret" style="width:100%" />
+</div>
+
+<script type="text/javascript">
+document.getElementById('remove_whitespace').onchange=function(){
+  var val = this.value;
+  val = val
+  .replace(/[\s\.]/g,'_')
+  .replace(/[\'\"]/g,'')
+  .toLowerCase();
+  document.getElementById('remove_whitespace_ret').value= val+'.html';
+}
+</script>
+</body>
+</html>
