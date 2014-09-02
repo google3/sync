@@ -1,0 +1,11 @@
+{
+  "name": "email",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemailer": "^1.2.0"
+  }
+}
