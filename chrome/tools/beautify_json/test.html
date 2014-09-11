@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>test</title>
+<style type="text/css">
+.btn{cursor:pointer;margin-left: -15px;}
+pre.prettyprint li{padding-left:20px;}
+</style>
+</head>
+<body>
+<script>
+function format(txt,compress){
+    var indentChar = '    ';   
+    if(/^\s*$/.test(txt)){   
+        alert('数据为空,无法格式化! ');   
+        return;   
+    }   
+    try{
+        var data=JSON.parse(txt);
+    }   
+    catch(e){   
+        alert('数据源语法错误,格式化失败! 错误信息: '+e.description,'err');   
+        return;   
+    };   
+    var draw=[],last=false,This=this,line=compress?'':'\n',nodeCount=0,maxDepth=0;   
+       
+    var notify=function(name,value,isLast,indent/*缩进*/,formObj){   
+        nodeCount++;/*节点计数*/  
+        for (var i=0,tab='';i<indent;i++ )tab+=indentChar;/* 缩进HTML */  
+        tab=compress?'':tab;/*压缩模式忽略缩进*/  
+        maxDepth=++indent;/*缩进递增并记录*/  
+        if(value&&value.constructor==Array){/*处理数组*/  
+            draw.push(tab+(formObj?('"'+name+'":'):'')+'['+line);/*缩进'[' 然后换行*/  
+            for (var i=0;i<value.length;i++)   
+                notify(i,value[i],i==value.length-1,indent,false);   
+            draw.push(tab+']'+(isLast?line:(','+line)));/*缩进']'换行,若非尾元素则添加逗号*/  
+        }else if(value&&typeof value=='object'){/*处理对象*/  
+                draw.push(tab+(formObj?('"'+name+'":'):'')+'{'+line);/*缩进'{' 然后换行*/  
+                var len=0,i=0;   
+                for(var key in value)len++;   
+                for(var key in value)notify(key,value[key],++i==len,indent,true);   
+                draw.push(tab+'}'+(isLast?line:(','+line)));/*缩进'}'换行,若非尾元素则添加逗号*/  
+            }else{   
+                    if(typeof value=='string')value='"'+value+'"';   
+                    draw.push(tab+(formObj?('"'+name+'":'):'')+value+(isLast?'':',')+line);   
+            };   
+    };   
+    var isLast=true,indent=0;   
+    notify('',data,isLast,indent,false);   
+    return draw.join(''); 
+}
+
+var str='{"age":100,"name":"中国","province":[{"name":"黑龙江","cities":{"city":["哈尔滨","大庆"]}},{"name":"广东","cities":{"city":["广州","深圳","珠海"]}},{"name":"台湾","cities":{"city":["台北","高雄"]}},{"name":"新疆","cities":{"city":["乌鲁木齐"]}}]}';
+
+str = '{"id":"XNjY1NDA2MDAw","title":"\u8fd4\u4e61\u6469\u6258\u5927\u519b--2014\u300a\u56de\u5bb6\u300b","description":"\u8fc7\u5e74\u662f\u4e2d\u56fd\u4eba\u7684\u4f20\u7edf\uff0c\u63a5\u8fd1\u5e74\u5c3e\u5230\u5904\u90fd\u662f\u5f52\u4e61\u7684\u6e38\u5b50\u3002\u6211\u4eec\uff0c\u4e00\u7fa4\u8bf4\u8fdc\u4e0d\u8fdc\u8bf4\u8fd1\u4e0d\u8fd1\u7684\u6253\u5de5\u8005\uff0c\u62a2\u4e0d\u5230\u8f66\u7968\u3001\u5750\u4e0d\u8d77\u98de\u673a\uff0c\u53ea\u80fd\u7528\u6211\u4eec\u6700\u7b80\u5355\u7684\u5de5\u5177---\u6469\u6258\u8f66\uff0c\u8e0f\u4e0a\u56de\u5bb6\u7684\u65c5\u7a0b\u3002\u613f\u5927\u5bb6\u5e73\u5e73\u5b89\u5b89\u56de\u5bb6\uff0c\u5feb\u5feb\u4e50\u4e50\u8fc7\u5e74\uff01","thumbnail":"http:\/\/g1.ykimg.com\/0100641F4652E0FCF5C8DD05909D193495D5B6-645F-6D2C-F91D-5A6CD6A1B146","thumbnail_v2":"http:\/\/r4.ykimg.com\/0542040852E0FD0D6A0A3F42CE15E787","duration":"222.96","comment_count":"1419","favorite_count":"97","up_count":"3626","down_count":"287","published":"2014-01-23 19:18:50","copyright_type":"original","public_type":"all","state":"normal","streamtypes":["flvhd","hd","3gphd"],"operation_limit":[],"category":"\u8d44\u8baf","view_count":798396,"paid":0,"link":"http:\/\/v.youku.com\/v_show\/id_XNjY1NDA2MDAw.html","player":"http:\/\/player.youku.com\/player.php\/sid\/XNjY1NDA2MDAw\/v.swf","user":{"id":"93363481","name":"\u7231\u6469\u6258\u8001\u5510","link":"http:\/\/v.youku.com\/user_show\/id_UMzczNDUzOTI0.html"}}';
+
+
+document.write([
+	'<pre id="code_wrap">',
+	format(str),
+	'</pre>'
+].join(''));
+</script>
+
+<script src="prettify.js"></script>
+<script>
+function init_pretty_code(){
+	var pre = document.getElementsByTagName('pre');
+	for(var i = 0, len = pre.length; i < len; i++){
+		pre[i].className = 'prettyprint linenums';
+	}
+	prettyPrint();
+}
+
+init_pretty_code()
+</script>
+
+
+<script>
+var ret = [[],[],[],[]];
+var ss=[];
+var a=document.querySelectorAll('.linenums li');
+for(var i=0,len=a.length;i<len;i++){
+    if(/.*(\{<\/span>$)/.test(a[i].innerHTML)){
+        ss.push({i:i+1,s:'{'});
+    }
+    if(/.*(\]\,?<\/span>$)/.test(a[i].innerHTML)){
+        ss.push({i:i+1,s:']'});
+    }
+    if(/.*(\}\,?<\/span>$)/.test(a[i].innerHTML)){
+        ss.push({i:i+1,s:'}'});
+    }
+    if(/.*(\[<\/span>$)/.test(a[i].innerHTML)){
+        ss.push({i:i+1,s:'['});
+    }
+}
+
+function get_equal(arr,p){
+    var tmp=[];
+    var hash = {};
+    for(var i=0,len=arr.length;i<len;i++){
+        if(arr[i].s!=='{' && arr[i].s!=='['){
+            if(!hash.hasOwnProperty(i)){
+                tmp.push(arr[i]);
+            }
+            continue;
+        }
+        if(arr[i].s==='{' && arr[i+1].s==='}'){
+            p.push({s: arr[i]['i'], e: arr[i+1]['i'], t: '}'});
+            hash[i+1]=null;
+        }else if(arr[i].s==='[' && arr[i+1].s===']'){
+            p.push({s: arr[i]['i'], e: arr[i+1]['i'], t: ']'});
+            hash[i+1]=null;
+        }else{
+            tmp.push(arr[i]);
+            // tmp = tmp.concat( [ arr[i]] );
+        }
+        // i +=1;
+    }
+    return {t:tmp,r:p};
+}
+
+function re_show(ret){
+    for(var i=0,len=ret.length; i<len;i++){
+        var col = ret[i];
+        var li = a[col.s-1];
+        li.setAttribute('data-area',[col.s,col.e].join(','));
+        li.setAttribute('data-type',col.t);
+        // console.log(col.s);
+        var _str = li.querySelectorAll('.str')[0];
+        if(!_str){
+            // console.log(li);
+            _str = li.querySelectorAll('.pun')[0];
+            if(!_str){
+                continue;    
+            }
+        }
+        var _new = document.createElement('span');
+        _new.className='btn';
+        _new.innerHTML = '- ';
+        // _new.insertBefore(_str)
+        _str.parentNode.insertBefore(_new, _str);
+        var _new2 = document.createElement('span');
+        _new2.className='btn2';
+        _new2.innerHTML = '...'+col.t;
+        _new2.style.display = 'none';
+        li.appendChild(_new2);
+    }
+}
+
+function build(ss){
+    var arr=ss.slice(0);
+    var pair = [];
+    var rept = function(){
+        if(arr.length===0){
+            // console.log(pair);
+            re_show(pair);
+            return;
+        }
+        var ret = get_equal(arr,[]);
+        arr = ret.t;
+        pair = pair.concat(ret.r);
+        rept();
+    }
+    rept();
+}
+
+build(ss);
+// var s3 = get_equal(ss);
+
+
+document.getElementById('code_wrap').onclick=function(e){
+    var tar = e.target;
+    if( !(tar.nodeName.toUpperCase()==='SPAN' && tar.className==='btn') ){
+        return;
+    }
+    var li = tar.parentNode;
+    var btn2 = li.querySelectorAll('.btn2')[0];
+    if(btn2){
+        if(btn2.style.display==='none'){
+            btn2.style.display='';
+        }else{
+            btn2.style.display='none';
+        }
+    }
+    var area = li.getAttribute('data-area');
+    area = area.split(',');
+    console.log(area);
+    if(tar.innerHTML === '- '){
+        tar.innerHTML = '+ ';
+        toogle_list(area[0],area[1],'hide');
+    }else{
+        tar.innerHTML = '- ';
+        toogle_list(area[0],area[1],'show');
+    }
+}
+
+function toogle_list(f, t, type){
+    f = parseInt(f,10);
+    t = parseInt(t,10);
+    type = type==='hide'?'none':'';
+    for(var i=f;i<t; i++){
+        // if(type==='' && a[i].style.display==='none'){
+        //     continue;
+        // }
+        a[i].style.display = type;
+        // console.log(a[i]);
+    }
+}
+
+</script>
+</body>
+</html>

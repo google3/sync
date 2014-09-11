@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="CSS border radius generator for lazy people." />
+    <meta name="keywords" content="css3, border radius, css3 border radius, webkit border radius, firefox border radius" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>CSS Border Radius Generator</title>
+    <style type="text/css" media="screen">
+        html {
+            background: #3d3d3d;
+        }
+        
+        body {
+            background: #3d3d3d;
+            font: 12px 'Lucida Grande', Arial, sans-serif;
+        }
+        
+        #logo {
+            background: url('border_radius.png') top left no-repeat transparent;
+            width: 283px;
+            height: 35px;
+            text-indent: -9999px;
+            margin: 65px auto 15px auto;
+        }
+        
+        #credit {
+            text-align: center;
+            color: #565656;
+            margin-bottom: 50px;
+            text-transform: lowercase;
+            cursor: default;
+        }
+            
+            #credit a {
+                color: #565656;
+                text-decoration: none;
+            }
+            
+            #credit a:hover {
+                color: #5f5f5f;
+            }
+        
+        #container {
+            width: 550px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+            #container .input_wrapper {
+                position: absolute;
+                width: 100px;
+                height: 50px;
+            }
+                
+                #container .input_wrapper#input_wrapper_tl {
+                    top: -2px;
+                    left: -115px;
+                    text-align: right;
+                }
+                
+                #container .input_wrapper#input_wrapper_tr {
+                    top: -2px;
+                    right: -115px;
+                    text-align: left;
+                }
+                
+                #container .input_wrapper#input_wrapper_bl {
+                    bottom: -2px;
+                    left: -115px;
+                    text-align: right;
+                }
+                
+                #container .input_wrapper#input_wrapper_br {
+                    bottom: -2px;
+                    right: -115px;
+                    text-align: left;
+                }
+                
+                #container .input_wrapper input {
+                    text-align: right;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 82px;
+                    padding: 2px 8px;
+                    border: 1px solid #2f2f2f;
+                    outline: none;
+                    background: #393939;
+                    font: bold 15px Arial, Helvetica, sans-serif;
+                    color: #fff;
+                }
+                
+                    #container .input_wrapper#input_wrapper_tr input,
+                    #container .input_wrapper#input_wrapper_br input {
+                        text-align: left;
+                        right: auto;
+                        left: 0;
+                    }
+                    
+                    #container .input_wrapper#input_wrapper_bl input,
+                    #container .input_wrapper#input_wrapper_br input {
+                        top: auto;
+                        bottom: -1px;
+                    }
+                
+                #container .input_wrapper input.chars_1 { width: 10px }
+                #container .input_wrapper input.chars_2 { width: 18px }
+                #container .input_wrapper input.chars_3 { width: 26px }
+                #container .input_wrapper input.chars_4 { width: 34px }
+                
+            #container #surface {
+                background: #e9eaee;
+                border: 2px solid #ffffff;
+                padding: 44px 40px 20px 40px;
+                width: 460px;
+                margin: 0 auto;
+                text-align: center;
+                box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+                -moz-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+                -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+            }
+            
+                #container #surface textarea {
+                    background: #fafafc;
+                    border: 1px solid #a3a3a3;
+                    resize: none;
+                    width: 430px;
+                    height: 240px;
+                    outline: none;
+                    font: normal 15px Monaco, 'Courier New', monospace;
+                    line-height: 20px;
+                    padding: 9px 10px;
+                    color: #2f2f2f;
+                    overflow: hidden;
+                }
+                
+                #container #surface #options {
+                    margin: 10px 0 0 0;
+                }
+                
+                    #container #surface #options input {
+                        margin-right: 2px;
+                    }
+                    
+                    #container #surface #options label {
+                        margin-right: 6px;
+                        color: #393939;
+                    }
+                    
+                    #container #surface #options label.last {
+                        margin-right: 0;
+                    }
+    </style>
+    <script src="prototype.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="logo">CSS Border Radius</div>
+    
+    <div id="container">
+        <div class="input_wrapper" id="input_wrapper_tl">
+            <input type="text" id="input_tl" class="chars_1" value="0" onkeypress="return observe_input_keypress(event)" />
+        </div>
+        <div class="input_wrapper" id="input_wrapper_tr">
+            <input type="text" id="input_tr" class="chars_1" value="0" onkeypress="return observe_input_keypress(event)" />
+        </div>
+        <div class="input_wrapper" id="input_wrapper_br">
+            <input type="text" id="input_br" class="chars_1" value="0" onkeypress="return observe_input_keypress(event)" />
+        </div>
+        <div class="input_wrapper" id="input_wrapper_bl">
+            <input type="text" id="input_bl" class="chars_1" value="0" onkeypress="return observe_input_keypress(event)" />
+        </div>
+        
+        <div id="surface">
+            <textarea id="code" readonly="readonly"></textarea>
+            
+            <div id="options">
+                <input type="checkbox" checked="true" id="opt_webkit" /><label for="opt_webkit"> WebKit</label> 
+                <input type="checkbox" checked="true" id="opt_gecko" /><label for="opt_gecko" class="last"> Gecko</label> 
+                <input type="checkbox" checked="true" id="opt_css3" /><label for="opt_css3"> CSS3</label>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<style type="text/css">
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	width: 150px;
+	height: 50px;
+	padding:3px;
+}
+.wrap{
+}
+.wrap h1{
+	font-size: 16px;
+	height: 30px;
+	padding-left:5px;
+	line-height: 30px;
+	border-bottom: solid 1px #dfdfdf;
+}
+.wrap ul{
+	list-style:none;
+	margin-top:5px;
+}
+.wrap ul li{
+	height: 25px;
+	line-height: 25px;
+	cursor:pointer;
+	font-size: 14px;
+}
+.wrap ul li:hover{
+	background:#888;
+	color: #dfdfdf;
+}
+.icon{
+	display: inline-block;
+	height:18px;
+	width:18px;
+	position: relative;
+	top: 4px;
+	margin-right: 2px;
+	background-size: 100%;
+}
+.icon_debug{
+	background-image:url(images/Debug-Open-in-browser-icon.png);
+}
+.icon_about{
+	background-image:url(images/Management-Manager-icon.png);
+}
+.icon_radius{
+	background-image:url(images/Image-Edition-Tools-Ellips-icon.png);
+}
+</style>
+<div class="wrap">
+	<h1>前端工具</h1>
+	<ul>
+		<li id="check_page">
+			<i class="icon icon_debug"></i>
+			页面检查
+		</li>
+		<li id="css3_radius">
+			<i class="icon icon_radius"></i>
+			CSS3圆角
+		</li>
+		<li id="about">
+			<i class="icon icon_about"></i>
+			About
+		</li>
+	</ul>
+</div>
+<script src="js/popup.js" type="text/javascript"></script>

@@ -1,0 +1,26 @@
+{
+  "name": "前端工具",
+  "manifest_version": 2,
+  "version":"1.2",
+  "description": "前端工具集",
+  "browser_action": {
+    "default_icon": "images/icon/icon32.png" ,
+    "default_title": "前端工具",
+    "default_popup": "popup.html"
+  },
+  "icons": { 
+    "32": "images/icon/icon32.png",
+    "48": "images/icon/icon48.png",
+    "64": "images/icon/icon64.png",
+    "128": "images/icon/icon128.png"
+  },  
+  "permissions": [
+      "tabs",
+      "http://*/*",
+      "https://*/*",
+      "notifications"
+  ],
+  "background": {
+      "scripts": ["background.js"]
+  }
+}

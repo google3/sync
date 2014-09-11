@@ -1,0 +1,123 @@
+body{
+	font-family:"Lucida Sans","Lucida Grande",Verdana,"Helvetica Neue",Helvetica,sans-serif;
+	font-size:13px;
+	background:#dfdfdf;
+}
+.entry{
+	width: 900px;
+	margin: 0 auto;
+	background-color: #efefef;
+	padding: 5px;
+}
+a{
+	color: #268bd2;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: gray;
+    text-decoration: line-through;
+}
+a:active{
+	text-decoration: line-through;
+}
+pre{
+	border-left: 3px solid #333;
+	word-wrap: break-word;
+	padding-left: 10px;
+	font-family: "华文雅黑",Consolas;
+}
+h1{
+	color:#0069d6;
+	text-align: center;
+	font-family:'Segoe UI Light','Segoe UI','Microsoft Jhenghei','微软雅黑',sans-serif;
+	border-bottom: solid 1px #333;
+}
+h2{
+	font:19px "Helvetica Neue",Helvetica,"Lucida Grande","Luxi Sans",Arial,"Hiragino Sans GB",STHeiti,"Microsoft YaHei","Wenquanyi Micro Hei","WenQuanYi Micro Hei Mono","WenQuanYi Zen Hei","WenQuanYi Zen Hei Mono",LiGothicMed;
+}
+
+/**
+ * pretty print start
+ */
+.pln {
+	color: #FFF;
+}
+.str {
+	color: #dd1144;
+}
+/* a keyword */
+.kwd {
+	color: #66D9EF;
+	font-weight:bold;
+}
+/* a comment */
+.com {
+	color: #75715e;
+	font-style: italic;
+}
+/* a type name */
+.typ {
+	color: #008080;
+	font-weight: bold;
+}
+/* a literal value */
+.lit {
+	color: green;
+}
+/* punctuation */
+.pun {
+	color: #cc6666;
+}
+/* lisp open bracket */
+.opn {
+	color: #333333;
+}
+/* lisp close bracket */
+.clo {
+	color: #333333;
+}
+/* a markup tag name */
+.tag {
+	color: navy;
+}
+/* a markup attribute name */
+.atn {
+	color: teal;
+}
+/* a markup attribute value */
+.atv {
+	color: #dd1144;
+}
+/* a declaration */
+.dec {
+	color: #333333;
+}
+/* a variable name */
+.var {
+	color: teal;
+}
+/* a function name */
+.fun {
+	color: #990000;
+}
+/* Style */
+pre.prettyprint {
+	background: #272822;
+	/*font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;*/
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 10px;
+}
+pre.prettyprint li{
+	border-left:3px solid rgb(100, 188, 247);
+	padding-left: 5px;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: rgb(100, 188, 247);
+}

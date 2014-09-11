@@ -1,0 +1,104 @@
+<script src="../../libs/jquery-2.0.3.min.js"></script>
+<script>
+var json = {
+	name: 'zobor',
+	age: 100,
+	size: 180,
+	map:{
+		a:1,
+		b:2
+	},
+	city: [
+		{
+			provinces: '湖北',
+			name: '武汉'
+		},
+		{
+			provinces: '广东',
+			name: '深圳'
+		}
+	]
+};
+var str = JSON.stringify(json);
+// str = '{"id":"XNjY1NDA2MDAw","title":"\u8fd4\u4e61\u6469\u6258\u5927\u519b--2014\u300a\u56de\u5bb6\u300b","description":"\u8fc7\u5e74\u662f\u4e2d\u56fd\u4eba\u7684\u4f20\u7edf\uff0c\u63a5\u8fd1\u5e74\u5c3e\u5230\u5904\u90fd\u662f\u5f52\u4e61\u7684\u6e38\u5b50\u3002\u6211\u4eec\uff0c\u4e00\u7fa4\u8bf4\u8fdc\u4e0d\u8fdc\u8bf4\u8fd1\u4e0d\u8fd1\u7684\u6253\u5de5\u8005\uff0c\u62a2\u4e0d\u5230\u8f66\u7968\u3001\u5750\u4e0d\u8d77\u98de\u673a\uff0c\u53ea\u80fd\u7528\u6211\u4eec\u6700\u7b80\u5355\u7684\u5de5\u5177---\u6469\u6258\u8f66\uff0c\u8e0f\u4e0a\u56de\u5bb6\u7684\u65c5\u7a0b\u3002\u613f\u5927\u5bb6\u5e73\u5e73\u5b89\u5b89\u56de\u5bb6\uff0c\u5feb\u5feb\u4e50\u4e50\u8fc7\u5e74\uff01","thumbnail":"http:\/\/g1.ykimg.com\/0100641F4652E0FCF5C8DD05909D193495D5B6-645F-6D2C-F91D-5A6CD6A1B146","thumbnail_v2":"http:\/\/r4.ykimg.com\/0542040852E0FD0D6A0A3F42CE15E787","duration":"222.96","comment_count":"1419","favorite_count":"97","up_count":"3626","down_count":"287","published":"2014-01-23 19:18:50","copyright_type":"original","public_type":"all","state":"normal","streamtypes":["flvhd","hd","3gphd"],"operation_limit":[],"category":"\u8d44\u8baf","view_count":798396,"paid":0,"link":"http:\/\/v.youku.com\/v_show\/id_XNjY1NDA2MDAw.html","player":"http:\/\/player.youku.com\/player.php\/sid\/XNjY1NDA2MDAw\/v.swf","user":{"id":"93363481","name":"\u7231\u6469\u6258\u8001\u5510","link":"http:\/\/v.youku.com\/user_show\/id_UMzczNDUzOTI0.html"}}';
+// json=JSON.parse(str);
+// document.write(str);
+
+json={"isLoaded":false,"ver":"$Rev: 11343 $","lastmodify":"$Date: 2011-09-29 10:37:23 +0800 (周四, 29 九月 2011) $","isDebug":false,"path":{"trimpath":"http://imgcache.qq.com/tencentvideo_v1/js/trimpath.min.js","filmCritic":"http://sns.video.qq.com/fcgi-bin/liveportal/getfilmcritic?otype=json","userComment":"http://sns.video.qq.com/fcgi-bin/liveportal/comment?otype=json","videoInfo":"http://sns.video.qq.com/tvideo/fcgi-bin/video?otype=json","videoTagInfo":"http://sns.video.qq.com/tvideo/fcgi-bin/vtag?otype=json","search_cgi":"http://v.qq.com/search.html?pagetype=3","search_suggest":"http://sns.video.qq.com/fcgi-bin/soso_suggestion?sm_category=3&sm_need_num=10&otype=json&sm_key=","search_suggest2":"http://s.video.qq.com/smartbox?plat=2&ver=0&num=10&otype=json&query=","pingfencgi":"http://sns.video.qq.com/fcgi-bin/portalscore?otype=json","favouritecgi":"http://sns.video.qq.com/fcgi-bin/liveportal/favorite","weiboget":"http://sns.video.qq.com/tvideo/fcgi-bin/opmicroblog?otype=json","weiboSend":"http://sns.video.qq.com/tvideo/fcgi-bin/pubmblog","weiboSend_2":"http://sns.video.qq.com/tvideo/fcgi-bin/livepubmblog4po","videoRelate":"http://sns.video.qq.com/tvideo/fcgi-bin/relatedvideo?otype=json","singerMVList":"http://sns.video.qq.com/tvideo/fcgi-bin/GetSingerMV?otype=json","flashReport":"http://rcgi.video.qq.com/tencentvideo_report?","html5_video_cgi":"http://vv.video.qq.com/geturl?otype=json","addMvMusicBox":"http://s.plcloud.music.qq.com/fcgi-bin/fcg_mvlist_add.fcg","queryMvMusicBox":"http://s.plcloud.music.qq.com/fcgi-bin/fcg_mvlist_isadded.fcg","delMvMusicBox":"http://s.plcloud.music.qq.com/fcgi-bin/fcg_mvlist_mod.fcg","mvMusicFav":"http://qzone-music.qq.com/fcg-bin/fcg_mvlist_add.fcg","videoViewNum":"http://sns.video.qq.com/tvideo/fcgi-bin/viewnum?otype=json","getCoverInfo":"http://sns.video.qq.com/fcgi-bin/coverdetail?otype=json","hls_video_cgi":"http://vv.video.qq.com/gethls?otype=json&format=2","coverViewNum":"http://sns.video.qq.com/fcgi-bin/dlib/dataout_pc?auto_id=55&otype=json","videoRecommend":"http://sns.video.qq.com/fcgi-bin/dlib/dataout_pc?auto_id=163&otype=json","bokeplayhost":"play.v.qq.com","kid_list_autodata":"http://sns.video.qq.com/fcgi-bin/dlib/dataout_pc?auto_id=53&","bookcgi":"http://sns.video.qq.com/fcgi-bin/liveportal/nbook","getBookCgi":"http://sns.video.qq.com/fcgi-bin/liveportal/norder","recommendCgi":"http://sns.video.qq.com/tvideo/fcgi-bin/spvote","queryHistoryRecordCgi":"http://ncgi.video.qq.com/tvideo/fcgi-bin/myview","addHistoryRecordCgi":"http://rcgi.video.qq.com/report/myviewreport","batchgetscoreCgi":"http://sns.video.qq.com/tvideo/fcgi-bin/batchgetscore","batchgetplaymount":"http://sns.video.qq.com/tvideo/fcgi-bin/batchgetplaymount","myopnumCgi":"http://ncgi.video.qq.com/tvideo/fcgi-bin/myopnum","getVideoListCgi":"http://c.v.qq.com/vuserinfor","getUserULikeCgi":"http://sns.video.qq.com/tvideo/fcgi-bin/favVideo","userOrderListCgi":"http://pay.video.qq.com/fcgi-bin/order","myinterestCgi":"http://ncgi.video.qq.com/tvideo/fcgi-bin/myinterest","myfollowfeedsCgi":"http://c.v.qq.com/myfollowfeeds","getVideoRecommonCgi":"http://sns.video.qq.com/tvideo/fcgi-bin/mediacommend","getCoverRecommonCgi":"http://sns.video.qq.com/fcgi-bin/dlib/dataout_pc?auto_id=162&","getUserUploadVideoNumCgi":"http://c.v.qq.com/uvcount","checkIsVip":"http://pay.video.qq.com/fcgi-bin/payvip?otype=json","getUserPayTicket":"http://pay.video.qq.com/fcgi-bin/getmyticket?otype=json","exchange":"http://pay.video.qq.com/fcgi-bin/cdkey_exchange?otype=json","userAllTicket":"http://pay.video.qq.com/fcgi-bin/user_ticket?otype=json","web_report":"http://rcgi.video.qq.com/web_report","getVuserInfo":"http://c.v.qq.com/vuserinfoget?otype=json","checkfollowviewed":"http://c.v.qq.com/checkfollowviewed?&otype=json","ulike":"http://like.video.qq.com/fcgi-bin/recommand?playright=2"},"Event":{"loadedFollow":"loaded_follow"},"template":{"trimpath":"http://qzs.qq.com/tencentvideo_v1/js/trimpath.min.js?max_age=60480000","_isLoadingJS":false,"_getJsDtd":null,"_callStack":0,"_currentTopModifiers":null,"FILL_TYPE":{"TPL_ID":1,"TPL_STR":2},"MODIFIERS":{}},"login":{"config":{"appid":"532001601","uinCookie":"uin","luinCookie":"luin","encuinCookie":"encuin","nickCookie":"lw_nick","quickLogin":true,"jumpurl":"","clientjumpurl":null,"showMask":true,"success":null,"logout":null,"rejectLogin":null,"login_cgi":"http://c.video.qq.com/cgi-bin/login?otype=json","renew_skey":"http://uple.qq.com/?t=aio_page&op=renew","show_uniq":false,"show_content":"","login_btn_text":"登录","logout_btn_text":"[退出]","logout_nick_html":"","disLogCallback":false,"useStrictLogin":true,"avatarSize":[40,100]}},"log_arr":["init page","call seedplayer.write"],"common":{"rootPath":"","conf":{"needGoToLoginPage":false,"needShowVipIcon":true,"needInitPageHotKey":true,"needWinSafariHack":false,"isFilmPage":false,"needInitSearchBar":true,"alwaysShowMytvMenu":false,"needInitNav":true,"useStrictLogin":true,"noRightTips":{"1":"暂不支持在网页播放，点击打开客户端播放","3":"暂不支持网页播放，请到视频手机端观看","4":"暂不支持网页播放，请到视频平板端观看","5":"暂不支持网页播放，请到视频手机端观看","8":"暂不支持网页播放，请到视频TV端观看","toclient":"暂不支持网页播放，请到视频客户端观看","none":"暂不支持网页播放"},"pageType":""},"popNameDef":{"SEARCH":"smartboxPop","HISTORY":"historyPop","COLLECT":"collectPop","MESSAGE":"mynoticePop","AVATAR":"avatarPop","LOGIN":"loginPop","TIPS":"tipsPop"},"_onScrollCbObj":{},"initPageFlag":true},"vip":{"onNotLogin":null},"history":{"option":{"coverid":"","tit":null,"lnk":null,"isPay":0,"vid":"","typeid":""},"nParamDef":{"BATCHINFO":8,"ONEINFO":7,"LIST":1,"DELETEONE":4},"rParamDef":{"ONEREPORT":3,"BATCHREPORT":4,"ONEINFO":6},"rfDefine":{"V":"v","FILM":"hlw"},"localStorageItemDefine":{"V":{"uins":"ten_video_history_uin_storage_key","history":"ten_video_history"},"FILM":{"uins":"txv_film_history_uin_storage","history":"txv_film_history"}},"site":"V","mod_id":"modHistoryContent","hisList":null,"storageReady":true,"localUserStorgeKeyArr":null,"uinStorageKey":"ten_video_history_uin_storage_key","historyKey":"ten_video_history","template":"<dd key=\"{key}\"><a href=\"{lnk}\" _hot=\"mynav.historylist.index\" _qtag=\"nav.history\" title=\"{hoverTit}\" target=\"{target}\" class=\"video_name\">{tit}</a><span class=\"video_timestamp\">{timeTips}</span><a href=\"javascript:;\" _hot=\"mynav.historydelete.index\"  _key=\"{key}\" data-type=\"del\" title=\"删除\" _idx={idx} class=\"btn_close\">×</a></dd>","rmAllTemp":"<a href=\"javascript:;\" class=\"btn_clear\" id=\"rmAllHistory\"><i class=\"ico_clear\"></i><span class=\"ico_text\">清空播放记录</span></a>","iframeTemp":"<iframe src=\"about:blank\" frameborder=\"0\" class=\"iframe_mask\"></iframe>","byDayTpl":"<dl class=\"timeline_video_list {cls}\">{day}{content}</dl>","dayTpl":"<dt><span class=\"dot_wrap\"><i class=\"dot\"></i></span><span class=\"timeline_date\">{text}</span></dt>","noResultTpl":"<div class=\"quick_pop_empty\"><i class=\"ico_history_95\"></i><p class=\"empty_txt\">{tips}</p></div>","notLoginNoResultTpl":"<div class=\"quick_pop_empty quick_pop_empty_login\"><a href=\"javascript:;\" class=\"btn_login\" data-type=\"login\"><span class=\"btn_inner\">登&nbsp;&nbsp;录</span></a><p class=\"empty_txt\">请登录查看历史记录</p></div>","getMoreBtnTpl":"<a href=\"http://v.qq.com/mytv/history.html\" target=\"_blank\" class=\"btn_pop_link _checklogin\" data-type=\"getMoreHistory\" _hot=\"mynav.historymore.index\"><span class=\"ico_text\">{tips}</span></a>","noResultCls":"mod_history_pop_nothing","noLoginCls":"mod_history_pop_login","emptyTips":"您暂时还没有历史记录","errorTips":"获取数据失败","timeLongLimit":300,"reportTimer":0,"reportToServerTimeLimit":30,"v2":true,"localAddLock":false,"isBatchReport":false,"playPageFlag":false,"navSize":5,"onesLocalSize":10,"timeFlagDef":{"finish":-2,"begin":-1},"lastReportToServerKeyid":"","pageType":"index","_onShowContentCbObj":{},"_onHideContentCbObj":{}},"headfavorite":{"conf":{"jsalias":"widget.follow_core","verStorageName":"txv_headfavorite_ver","jsStorageName":"txv_headfavorite_js","curVer":"2.0","localCacheTime":86400000,"containerId":"mod_head_favorites","trigglerId":"mod_head_favorites_trigger","popId":"mod_head_favorites_pop","contentTpl":"<ul class=\"attention_list\">{list}</ul><a href=\"http://v.qq.com/mytv/follow.html\" target=\"_blank\" class=\"btn_pop_link btn_pop_more\" _hot=\"mynav.followmore.{pageType}\"><span class=\"ico_text\">查看更多</span></a>","itemTpl":"<li class=\"{cls}\"><i class=\"ico_dot\"></i><a {idattr} href=\"{url}\" title=\"{hoverTitle}\" class=\"list_name\" target=\"{target}\" _hot=\"mynav.followlist.{pageType}\" _qtag=\"nav.follow\"><span class=\"list_type\">{tn}</span>{n}</a>{desc}</li>","showCls":"open","contentId":"mod_head_favorites_content","noContentCls":"quick_pop_empty","noContentTpl":"<div class=\"quick_pop_empty\"><i class=\"ico_favorites_95\"></i><p class=\"empty_txt\">{tips}</p></div>","noContentTips":"您暂时还没有关注记录","getDataErrorTips":"获取数据失败，请稍后尝试刷新页面","getingDataTips":"正在努力获取数据","notLoginCls":"mod_attention_pop_login","noPlayrightTips":"由于版权方要求，本视频只能使用腾讯视频客户端播放","notLoginTpl":"<div class=\"quick_pop_empty quick_pop_empty_login\"><a href=\"javascript:;\" data-type=\"login\" class=\"btn_login\"><span class=\"btn_inner\">登&nbsp;&nbsp;录</span></a><p class=\"empty_txt\">{tips}</p></div>","notLoginTips":"请登录查看关注记录","listSize":5},"_onShowListCb":{},"_onHideListCb":{},"userData":{},"pageType":"index","hoverHot":""},"index":{"config":{"preLoadSize":2,"focusPageSize":7,"browserTotal":3,"notSupport":3,"topadId":"head_ad","topadCloseId":"close_ad","bdCls":"page_head_ad","aid":""}},"nav":{"myhome":{}}}
+
+function out_blank(num){
+	var ret=[];
+	while(num>0){
+		ret.push('    ');
+		num --;
+	}
+	return ret.join('');
+}
+
+function escape_html(str){
+	if(typeof str==='string'){
+		return str.replace(/</g,'&lt;').replace(/>/g,'&gt;')
+	}
+	return str;
+}
+
+function bueatify(data){
+	var html = [];
+	var deep=0;
+	var b_object = function(obj, deep){
+		deep ++;
+		var obj_len=0;
+		for(var i in obj){
+			obj_len++;
+		}
+		var cur_index = 0;
+		var is_last;
+		for(var i in obj){
+			cur_index++;
+			is_last = cur_index===obj_len?true:false
+			var col = obj[i];
+			if($.isArray(col)){
+				html.push(out_blank(deep)+'"'+(escape_html(i))+'": [\n');
+				b_array(col, deep);
+				html.push(out_blank(deep)+']'+(is_last?'':',')+'\n');
+			}else if(typeof col==='object'&&col&&col.constructor===Object){
+				html.push(out_blank(deep)+'"'+(escape_html(i))+'":{\n');
+				b_object(col, deep);
+				html.push(out_blank(deep)+'}'+(is_last?'':',')+'\n');
+			}else if(typeof col==='string'||typeof col==='number'){
+				html.push(out_blank(deep)+'"'+(escape_html(i))+'": "'+(escape_html(col))+'"'+(is_last?'':',')+'\n');
+			}
+		}
+	};
+	var b_array = function(arr, deep){
+		deep++;
+		var len = arr.length;
+		var is_last;
+		$(arr).each(function(index, val){
+			is_last = len===(index+1);
+			if($.isArray(val)){
+				b_array(val, deep);
+			}else if(typeof val==='object'&&val&&val.constructor===Object){
+				html.push(out_blank(deep)+'{\n');
+				b_object(val, deep);
+				html.push(out_blank(deep)+'}'+(is_last?'':',')+'\n');
+			}else if(typeof val==='string'||typeof val==='number'){
+				html.push(out_blank(deep)+(escape_html(val))+(is_last?'':',')+'\n');
+			}
+		});
+	};
+	if(typeof data==='object' && data.constructor===Object){
+		html.push(out_blank(deep)+'{\n');
+		b_object(data,0);
+		html.push(out_blank(deep)+'}\n');
+	}
+	return html.join('');
+}
+
+
+document.write([
+	'<pre>',
+	bueatify(json),
+	'</pre>'
+].join(''));
+</script>
