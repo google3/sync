@@ -14,11 +14,12 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
  */
 function initialize(tabId){
     chrome.tabs.executeScript(tabId, {file: "js/func.js", allFrames: false});
-    chrome.tabs.executeScript(tabId, {file: "js/bueatify_json.js", allFrames: false});
+    // chrome.tabs.executeScript(tabId, {file: "js/bueatify_json.js", allFrames: false});
 }
 
 function listen_msg(tabId){
 	chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+		console.log(request,sender, sendResponse);
 		chrome.tabs.executeScript(tabId, {file: "js/txv_tools.js", allFrames: true});
 	});
 }

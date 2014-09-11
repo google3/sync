@@ -12,7 +12,7 @@ var handlers = {
 	}
 };
 document.getElementById('check_page').addEventListener('click',function(){
-	chrome.extension.sendRequest('hahahahahahaha', function(data) {});
+	chrome.extension.sendRequest('check_page', function(data) {});
 },false);
 document.getElementById('about').addEventListener('click',function(){
 	handlers.go_my_blog();
