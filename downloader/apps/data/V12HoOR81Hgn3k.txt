@@ -1,0 +1,36 @@
+{
+	"code":0,
+	"subcode":0,
+	"message":"",
+	"default":0,
+	"data":
+{
+   "limit" : 3,
+   "photoList" : null,
+   "t" : "329641432",
+   "topic" : {
+      "bitmap" : "11000000",
+      "browser" : 0,
+      "classid" : 101,
+      "comment" : 1,
+      "cover_id" : "",
+      "createtime" : 1354200296,
+      "desc" : "说说和日志相册，保存您在说说、日志中上传的照片。默认仅自己可见。",
+      "handset" : 7,
+      "id" : "V12HoOR81Hgn3k",
+      "lastuploadtime" : 1354200298,
+      "modifytime" : 1376313326,
+      "name" : "说说和日志相册",
+      "ownerName" : "522195330",
+      "ownerUin" : "522195330",
+      "pre" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover_s.gif",
+      "priv" : 3,
+      "pypriv" : 3,
+      "total" : 0,
+      "url" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover.gif",
+      "viewtype" : 0
+   },
+   "totalInAlbum" : 0,
+   "totalInPage" : 0
+}
+}

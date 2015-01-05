@@ -1,0 +1,14 @@
+{
+	"network":{
+		"useProxy": true,
+		"proxy": "http://proxy.tencent.com:8080",
+		"proxy1": "http://127.0.0.1:8888"
+	},
+	"downloadPath": "E:\\Downloads\\",
+	"useragent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36",
+	"wget": "\"tools/wget/wget\"",
+	"mp4box": "\"tools/mp4box/mp4box\"",
+	"HD": true,
+	"PreferredFormat": "mp4",
+	"clearPart": true 
+}
