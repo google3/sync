@@ -1,1 +1,253 @@
-<div class="detail" id="detail"><ul class="head"><li style="width:100px;">序号</li><li>Ping的地点</li><li>响应IP</li><li>响应时间</li><li>TTL</li><li style="width:140px;">赞助商 <img alt="赞助点联系QQ：1751691323" title="赞助点联系QQ：1751691323" onclick="super1()" src="/template/default/images/helptip.gif"></li></ul><ul><li style="width:100px;">1</li><li>美国圣何塞[海外]</li><li><a href="http://ip.chinaz.com/?IP=74.125.239.119">74.125.239.119</a></li><li style="">1毫秒</li><li>56</li><li style="width:140px;"><a href="http://www.emshost.com" target="_blank">EMSHOST 云主机</a></li></ul><ul><li style="width:100px;">2</li><li>韩国[海外]</li><li><a href="http://ip.chinaz.com/?IP=173.194.127.152">173.194.127.152</a></li><li style="">53毫秒</li><li>54</li><li style="width:140px;"><a href="http://www.360jq.com/server.htm" target="_blank">【打不死】高防服务器</a></li></ul><ul><li style="width:100px;">3</li><li>美国圣安娜[海外]</li><li><a href="http://ip.chinaz.com/?IP=74.125.20.94">74.125.20.94</a></li><li style="">27毫秒</li><li>46</li><li style="width:140px;"><a href="http://www.zjzg.com/kt.html" target="_blank">美国KT高速服务器</a></li></ul><ul><li style="width:100px;">4</li><li>美国迈阿密[海外]</li><li><a href="http://ip.chinaz.com/?IP=209.116.186.236">209.116.186.236</a></li><li style="">1毫秒</li><li>57</li><li style="width:140px;"><a href="http://www.staridc.net" target="_blank">全球资源|星王科技</a></li></ul><ul><li style="width:100px;">5</li><li>美国堪萨斯[海外]</li><li><a href="http://ip.chinaz.com/?IP=74.125.225.15">74.125.225.15</a></li><li style="">13毫秒</li><li>55</li><li style="width:140px;"><a href="http://www.qilang.net" target="_blank">奇浪网服务器VPS</a></li></ul><ul><li style="width:100px;">6</li><li>日本[海外]</li><li><a href="http://ip.chinaz.com/?IP=173.194.72.94">173.194.72.94</a></li><li style="">47毫秒</li><li>48</li><li style="width:140px;"><a href="http://www.360jq.com/usfang.htm" target="_blank">【美国双高防】不封IP</a></li></ul><ul><li style="width:100px;">7</li><li>英国[海外]</li><li><a href="http://ip.chinaz.com/?IP=173.194.112.152">173.194.112.152</a></li><li style="">14毫秒</li><li>54</li><li style="width:140px;"><a href="http://www.staridc.net/Offers.html" target="_blank">国外百兆独服499元</a></li></ul><ul><li style="width:100px;">8</li><li>美国洛杉矶[海外]</li><li><a href="http://ip.chinaz.com/?IP=74.125.224.143">74.125.224.143</a></li><li style="">1毫秒</li><li>58</li><li style="width:140px;"><a href="http://www.kiiyi.com" target="_blank">快易互联</a></li></ul><ul><li style="width:100px;">9</li><li>香港[海外]</li><li><a href="http://ip.chinaz.com/?IP=173.194.127.239">173.194.127.239</a></li><li style="">2毫秒</li><li>59</li><li style="width:140px;"><a href="http://www.360jq.com/hkshuang.htm" target="_blank">香港【双线】稳定</a></li></ul><ul><li style="width:100px;">10</li><li>台湾[海外]</li><li><a href="http://ip.chinaz.com/?IP=74.125.23.94">74.125.23.94</a></li><li style="">12毫秒</li><li>45</li><li style="width:140px;"><a href="http://www.xmwzidc.com/ProTwSer.asp" target="_blank">海西数据台湾机房</a></li></ul></div>
+﻿<tbody>
+                <tr>
+                    <th>
+                        <div>监测点</div>
+                    </th>
+                    <th>
+                        <div>响应IP</div>
+                    </th>
+                    <th>
+                        <div>IP归属地</div>
+                    </th>
+                    <th>
+                        <div>响应时间<i class="sort cursor" st="0" style="display: inline-block;"></i></div>
+                    </th>
+                    <th>
+                        <div>TTL</div>
+                    </th>
+                    <th>
+                        <div>赞助商</div>
+                    </th>
+                </tr>
+                                                <tr id="ace114f3-5fa6-4a7c-96b5-121cd448a855">
+                    <td name="city" lass="blNone">
+                        <div>荷兰[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=74.125.136.132" target="_blank">74.125.136.132</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>5毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>48</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.comvps.com" target="_blank">ComVps|国外云主机</a></div>
+                    </td>  
+                </tr>
+                                                <tr class="even" id="048678e3-d4f1-47c3-9ed2-5f430b596509">
+                    <td name="city" lass="blNone">
+                        <div>香港[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=173.194.127.43" target="_blank">173.194.127.43</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>10毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>59</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.360jq.com/hkshuang.htm" target="_blank">香港【双线】稳定</a></div>
+                    </td>  
+                </tr>
+                                                <tr id="34ae027a-13f1-46b4-bd3e-65498c7c2468">
+                    <td name="city" lass="blNone">
+                        <div>美国迈阿密[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=64.233.168.132" target="_blank">64.233.168.132</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>38毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>44</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.staridc.net" target="_blank">全球资源|星王科技</a></div>
+                    </td>  
+                </tr>
+                                                <tr class="even" id="af446471-1a03-44cd-bb5d-12b34ae88140">
+                    <td name="city" lass="blNone">
+                        <div>台湾[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=74.125.31.132" target="_blank">74.125.31.132</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>17毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>46</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.xmwzidc.com/ProTwSer.asp" target="_blank">海西数据台湾机房</a></div>
+                    </td>  
+                </tr>
+                                                <tr id="a715b22a-ced7-47ef-bb51-39b2696c5503">
+                    <td name="city" lass="blNone">
+                        <div>美国圣安娜[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=74.125.224.108" target="_blank">74.125.224.108</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>1毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>58</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.zjzg.com/kt.html" target="_blank">美国KT高速服务器</a></div>
+                    </td>  
+                </tr>
+                                                <tr class="even" id="89eb2554-315f-4948-9fcc-1bf0482e8bec">
+                    <td name="city" lass="blNone">
+                        <div>韩国[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=173.194.127.171" target="_blank">173.194.127.171</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>60毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>54</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.360jq.com/server.htm" target="_blank">【打不死】高防服务器</a></div>
+                    </td>  
+                </tr>
+                                                <tr id="49eb4e42-7edb-459d-b03d-f9400e03f7bb">
+                    <td name="city" lass="blNone">
+                        <div>美国圣何塞[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=74.125.239.138" target="_blank">74.125.239.138</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>1毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>56</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.emshost.com" target="_blank">EMSHOST 云主机</a></div>
+                    </td>  
+                </tr>
+                                                <tr class="even" id="8740f8a4-6c53-4567-a015-105199809089">
+                    <td name="city" lass="blNone">
+                        <div>日本[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=173.194.38.12" target="_blank">173.194.38.12</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>&lt;1毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>57</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.360jq.com/usfang.htm" target="_blank">【美国双高防】不封IP</a></div>
+                    </td>  
+                </tr>
+                                                <tr id="8c8940d1-3b31-4da9-b3d7-c00ab9ead503">
+                    <td name="city" lass="blNone">
+                        <div>美国洛杉矶[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=216.58.219.33" target="_blank">216.58.219.33</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>&lt;1毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>58</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.kiiyi.com" target="_blank">快易互联</a></div>
+                    </td>  
+                </tr>
+                                                <tr class="even" id="48dc9511-0e2b-4f9d-bb23-730fcc9c1ae6">
+                    <td name="city" lass="blNone">
+                        <div>英国[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=74.125.230.75" target="_blank">74.125.230.75</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>2毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>58</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.staridc.net/Offers.html" target="_blank">国外百兆独服499元</a></div>
+                    </td>  
+                </tr>
+                                                <tr id="cb9069aa-c897-4f27-bc36-988da8f4cb03">
+                    <td name="city" lass="blNone">
+                        <div>美国堪萨斯[海外]</div>
+                    </td>
+                    <td name="ip">
+                        <div><a href="http://ip.chinaz.com/?ip=64.233.187.132" target="_blank">64.233.187.132</a></div>
+                    </td>
+                    <td name="ipaddress">
+                        <div>美国 加利福尼亚州圣克拉拉县山景...</div>
+                    </td>
+                    <td name="responsetime">
+                        <div>168毫秒</div>
+                    </td>
+                    <td name="ttl">
+                        <div>42</div>
+                    </td>
+                   
+                    <td>
+                        <div><a href="http://www.qilang.net" target="_blank">奇浪网服务器VPS</a></div>
+                    </td>  
+                </tr>
+                                            </tbody>
