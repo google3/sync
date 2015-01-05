@@ -16,7 +16,7 @@ async.waterfall([
 		var list = txt.split('\r\n');
 		var files = [];
 		list.forEach(function(val, idx){
-			if(val){
+			if(val.indexOf('http://')>-1){
 				files.push(val);
 			}
 		});
