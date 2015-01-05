@@ -1,0 +1,36 @@
+{
+	"code":0,
+	"subcode":0,
+	"message":"",
+	"default":0,
+	"data":
+{
+   "limit" : 3,
+   "photoList" : null,
+   "t" : "329641432",
+   "topic" : {
+      "bitmap" : "11000001",
+      "browser" : 0,
+      "classid" : 101,
+      "comment" : 1,
+      "cover_id" : "",
+      "createtime" : 1285327116,
+      "desc" : "校友相册",
+      "handset" : 0,
+      "id" : "1d1ed76f-538f-4fdf-9637-d47954630266",
+      "lastuploadtime" : 1285327117,
+      "modifytime" : 1334468416,
+      "name" : "校友相册",
+      "ownerName" : "522195330",
+      "ownerUin" : "522195330",
+      "pre" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover_s.gif",
+      "priv" : 3,
+      "pypriv" : 3,
+      "total" : 0,
+      "url" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover.gif",
+      "viewtype" : 0
+   },
+   "totalInAlbum" : 0,
+   "totalInPage" : 0
+}
+}

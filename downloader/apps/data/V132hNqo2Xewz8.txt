@@ -1,0 +1,36 @@
+{
+	"code":0,
+	"subcode":0,
+	"message":"",
+	"default":0,
+	"data":
+{
+   "limit" : 0,
+   "photoList" : null,
+   "t" : "329641432",
+   "topic" : {
+      "bitmap" : "10000000",
+      "browser" : 0,
+      "classid" : 100,
+      "comment" : 1,
+      "cover_id" : "",
+      "createtime" : 1399532806,
+      "desc" : "啊",
+      "handset" : 0,
+      "id" : "V132hNqo2Xewz8",
+      "lastuploadtime" : 1399532806,
+      "modifytime" : 1399532806,
+      "name" : "大师傅",
+      "ownerName" : "2478604742",
+      "ownerUin" : "2478604742",
+      "pre" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover_s.gif",
+      "priv" : 1,
+      "pypriv" : 4,
+      "total" : 0,
+      "url" : "http:\/\/imgcache.qq.com\/ac\/qzone_v5\/photo\/no_cover.gif",
+      "viewtype" : 0
+   },
+   "totalInAlbum" : 0,
+   "totalInPage" : 0
+}
+}

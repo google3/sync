@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试</title>
+</head>
+<body>
+
+<script src="db.js"></script>
+<script>
+var db2 = {}, tag, db3=[];
+for(var i =0, len=db.length;i<len;i++){
+	if(db2[db[i].tag]){
+		db2[db[i].tag] += parseFloat(db[i].rmb.replace('"',''));
+	}else{
+		db2[db[i].tag] = parseFloat(db[i].rmb.replace('"',''));
+	}
+}
+for(var i in db2){
+	db3.push({tag: i, rmn: db2[i]});
+}
+db3 = db3.sort(function(a,b){
+	return a.rmb - b.rmb;
+});
+
+console.table(db3);
+
+</script>
+</body>
+</html>
